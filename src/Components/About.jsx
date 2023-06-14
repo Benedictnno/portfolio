@@ -37,7 +37,7 @@ const About = () => {
     },
   ];
   return (
-    <main className="">
+    <main className="about_container" id="about">
       <h1 className="about">About Me </h1>
       <section className="about_Me">
         <img src={womenImg} alt="" />
@@ -47,20 +47,22 @@ const About = () => {
             ipsum veritatis rem, ad molestias odio. Lorem ipsum dolor sit amet
             consectetur, adipisicing elit. Corporis, distinctio?
           </p>
-          <div>
-            <h2>Tech Stack</h2>
-            <div>
-              {teach.map(({ logo, text }) => {
-                return (
-                  <span className="stack" key={text}>
-                    {logo} <span>{text}</span>
-                  </span>
-                );
-              })}
-            </div>
-          </div>
         </div>
       </section>
+      
+
+      <div className="Stack_container">
+        <h2>Tech Stack</h2>
+        <div className="Stack_contain">
+          {teach.map(({ logo, text }) => {
+            return (
+              <span className="stack" key={text}>
+                {logo} <span>{text}</span>
+              </span>
+            );
+          })}
+        </div>
+      </div>
     </main>
   );
 };
