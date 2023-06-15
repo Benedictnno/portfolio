@@ -1,13 +1,6 @@
 import React,{useState} from 'react'
-import FloatingLabel from "react-bootstrap/FloatingLabel";
-import Form from "react-bootstrap/Form";
 
 const FormData = () => {
-  const data = [
-    { name: "Name", type: "name" },
-    { name: "Email", type: "Email" },
-    { name: "Raeson for contact", type: "Reason" },
-  ];
 
   const [formData, setFormData] = useState({
     Name: "",
@@ -26,14 +19,18 @@ const FormData = () => {
   };
 
 
-   const handleSubmit = (event) => {
-     event.preventDefault();
-     // Perform form submission or validation with the data
-     console.log(formData);
-   };
+  //  const handleSubmit = (event) => {
+    
+  //    console.log(formData);
+  //  };
 
   return (
-    <form onSubmit={handleSubmit} className="form">
+    <form
+      // onSubmit={handleSubmit}
+      className="form"
+      action="https://formspree.io/f/xayzrjgl"
+      method="POST"
+    >
       <label>
         Full Name:
         <input
@@ -58,10 +55,10 @@ const FormData = () => {
         Email:
         <input
           type="email"
-    name="Email"
-    className="form_input"
-    value={Email}
-    onChange={handleChange}
+          name="Email"
+          className="form_input"
+          value={Email}
+          onChange={handleChange}
         />
       </label>
       <label>
@@ -71,49 +68,16 @@ const FormData = () => {
           id=""
           cols="23"
           rows="5"
+          className="form_input"
           value={Subject}
           onChange={handleChange}
         ></textarea>
       </label>
-      <button type="submit" className='p_btn'>Submit</button>
+      <button type="submit" className="p_btn">
+        Submit
+      </button>
     </form>
-    // <>
-    //   <FloatingLabel
-    //     controlId="floatingTextarea"
-    //     label="Email address"
-    //     className="mb-3"
-    //   >
-    //     <Form.Control
-    //       type="text"
-    //       // name="Name"
-    //       // value={Name}
-    //       // onChange={handleChange}
-    //       // className=""
-    //       // placeholder="name@example.com"
-    //     />
-    //   </FloatingLabel>
-    //   <FloatingLabel
-    //     controlId="floatingInput"
-    //     label="Email address"
-    //     className="mb-3"
-    //   >
-    //     <Form.Control
-    //       type="email"
-    //       placeholder="name@example.com"
-    //       // name="Email"
-    //       // className=""
-    //       // value={Email}
-    //       // onChange={handleChange}
-    //     />
-    //   </FloatingLabel>
-    //   <FloatingLabel controlId="floatingPassword" label="Password">
-    //     <Form.Control type="password" placeholder="Password" />
-    //   </FloatingLabel>
-
-    //   <button type="submit" className="p_btn">
-    //     Submit
-    //   </button>
-    // </>
+   
   );
 };
 

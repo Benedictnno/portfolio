@@ -49,7 +49,7 @@ letter-spacing: 1px;
 
 }
 .intro> blockquote{
-  word-break: break-all;
+  white-space: wrap;
   text-align: center;
   width: 100%;
   font-family: var(--small-font-family);
@@ -113,9 +113,10 @@ white-space: nowrap;
 
 .about_Me{
   display: flex;
-  font-family: var(--small-font-family);
+  font-family: var(--title-font-family);
   justify-content: center;
   align-items: center;
+  white-space: break-spaces;
 }
 
 .about{
@@ -250,8 +251,8 @@ white-space: nowrap;
   color: #fff;
   border: none;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 0 ;
+  padding: 0 0 2rem 0;
 }
 
 .form{
@@ -268,12 +269,12 @@ margin: 0 auto;
 }
 
 .form_input{
-  font-family: var(--small-font-family);
-  font-size: smaller;
-  font-weight: 600;
+  font-family: var(--title-font-family);
+  font-size: 1.2rem;
+  font-weight: 400;
   margin-left: .5rem;
   margin-bottom: .5rem;
-  border-radius: 10px;
+  border-radius: 5px;
   padding:0 .5rem;
 }
 .copy{
@@ -401,7 +402,7 @@ font-family: var(--styled-font-family);
   text-align: center;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .Stack_contain {
       display: grid;
       grid-template-columns: repeat(2,6fr );
@@ -429,6 +430,7 @@ font-family: var(--styled-font-family);
     position: none;
     left: 0%;
     width: 100vw;
+   text-align: ;
   }
   .top_btn_container {
   display: grid;

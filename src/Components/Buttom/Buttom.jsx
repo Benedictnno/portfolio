@@ -20,9 +20,6 @@ const Buttom = () => {
       <div className="Buttom">
         <Contact />
         <FormData />
-        {/* <footer>
-          <h3></h3>
-        </footer> */}
       </div>
     </>
   );

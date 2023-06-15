@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const CopyText = ({text,icon,title,link}) => {
-//   const [Atext, setText] = useState("Text to be copied");
   const [copied, setCopied] = useState(false);
   
   const handleCopy = () => {

@@ -41,15 +41,21 @@ const About = () => {
       <h1 className="about">About Me </h1>
       <section className="about_Me">
         <img src={womenImg} alt="" />
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            ipsum veritatis rem, ad molestias odio. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Corporis, distinctio?
-          </p>
-        </div>
+        <p>
+          Hey there! I'm Benedict Nnaoma, a passionate Frontend developer with
+          2+ years of experience. I create visually stunning and user-friendly
+          digital experiences. I blend aesthetics with functionality to bring
+          visions to life. I've developed e-commerce platforms, responsive
+          websites, and intuitive interfaces for web applications. When I'm not
+          designing, I enjoy playing chess and reading self development books.
+          Let's collaborate! Reach out to me at
+          <a href="https://benedictnnaoma0@gmail.com" target="_blank">
+            benedictnnaoma0@gmail.com
+          </a>{" "}
+          or through the <a href="#contact">contact form below</a>. Together,
+          we'll create something exceptional.
+        </p>
       </section>
-      
 
       <div className="Stack_container">
         <h2>Tech Stack</h2>
