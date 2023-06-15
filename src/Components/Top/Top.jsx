@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
-import { motion } from "framer-motion";
 import womenImg from '../../images/womenImg.svg'
 import { MdWavingHand } from "react-icons/md";
-import { fadeIn } from 'react-animations'
-import styled  from 'styled-components'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Nav from "./Nav";
 import Quotes from "./Quotes";
+import Resume from '../../images/Resume.pdf'
 const Top = () => {
   const name = ["B", "E", "N", "E", "D", "I", "C", "T"];
    useEffect(() => {
@@ -33,7 +31,7 @@ const Top = () => {
           <br />
           <h1 className="frontend ">Frontend web developer </h1>
           <blockquote>
-            <Quotes/>
+            <Quotes />
             {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus sed
             velit ipsum libero consectetur mollitia rem maxime quam porro
             aliquam. */}
@@ -46,15 +44,12 @@ const Top = () => {
               type="button"
               className="top_btn contact animate__shakeY "
             >
-              Download Resume
+              <a href={Resume} download={"Benedict-Nnaoma.pdf"}>
+                Download Resume
+              </a>
             </button>
-            <button
-              type="button "
-              className="contact   "
-              // data-aos="flip-down"
-              // data-aos-duration="3000"
-            >
-              Contact developer{" "}
+            <button type="button " className="contact   ">
+              <a href="#contact">Contact developer</a>{" "}
             </button>
           </div>
         </section>
@@ -91,16 +86,12 @@ const Top = () => {
           ></path>
         </svg>
       </div>
-  
     </>
   );
 
 };
 
 
-// const bounceAnimation = keyframes`${}`;
-const Wrapper = styled.button`
-  animation: 1s ${fadeIn};
-`;
+
 
 export default Top;

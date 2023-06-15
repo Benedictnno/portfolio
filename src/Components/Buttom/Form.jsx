@@ -42,7 +42,7 @@ const FormData = () => {
         />
       </label>
       <label>
-        Raeson for contact:
+        Reason for contact:
         <input
           type="text"
           name="Reason"
