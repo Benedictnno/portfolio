@@ -30,14 +30,16 @@ const Projects = () => {
       id: 0,
       image: sparrow_Screenshot,
       title: "Comfy Sloth",
-      subtitle: ` Confy Sloth is an ecommerce project which is currently on going .\n It's an ecommerce web application for a funiture company which is built on React js`,
+      subtitle:
+        "Confy Sloth is an ongoing ecommerce project—an engaging web application designed for a furniture company. This ecommerce platform is built using React.js, leveraging its robust features and capabilities to provide an exceptional user experience for customers browsing and purchasing furniture products.",
       link: "https://sparrow-networkx.netlify.app",
     },
     {
       id: 1,
       image: gitHub,
       title: "Git Hub search Info ",
-      subtitle: `Git hub search info is a git hub analitics web app which gives insite on the seached git hub user `,
+      subtitle:
+        "GitHub Search Info is a GitHub analytics web application that provides valuable insights on searched GitHub users. It offers in-depth analysis and data about the searched GitHub user, allowing users to gain a better understanding of their activities, repositories, and contributions within the GitHub ecosystem.",
       points1: "Lists out user's followers",
       point2: "Gives insite on languages being used by the git hub",
       point3: "most popular repos",
@@ -50,7 +52,8 @@ const Projects = () => {
       id: 2,
       image: coctail,
       title: "Cocktail db",
-      subtitle: `cocktail db is a web application that gives infomation about diffirent coctails \n using the cocktail api it give's info on how to make any available cocktail being searched `,
+      subtitle:
+        "The Cocktail DB is a web application that provides comprehensive information about various cocktails using the Cocktail API. It offers details on how to make any cocktail that is available and being searched for, ensuring users have access to valuable recipes and instructions.",
       point1: "info about your favourite drinks",
       point2: "gives detailed instructions on how to make a different drinks ",
       point3: "listes out ingredience needed to make each drink",
@@ -62,7 +65,8 @@ const Projects = () => {
       id: 3,
       image: hackerNews_Screenshot,
       title: "HackerNews",
-      subtitle: `cocktail db is a web application that gives infomation about diffirent coctails \n using the cocktail api it give's info about any available cocktail being searched `,
+      subtitle:
+        "HackerNews is a dynamic news web application that provides comprehensive coverage on any topic you search for, ensuring the latest updates are readily accessible.",
       point1: "info about your favourite drinks",
       point2: "gives detailed instructions on how to make a different drinks ",
       point3: "listes out ingredience needed to make each drink",
@@ -76,9 +80,8 @@ const Projects = () => {
       title: "Hydra Landing Page",
       subtitle: `Welcome to Hydra, the immersive gateway to unforgettable virtual reality experiences that transport you to extraordinary worlds `,
       point1: "Landing page for a virtual reality company",
-      point2: "gives detailed instructions on how to make a different drinks ",
-      point3: "listes out ingredience needed to make each drink",
-      point4: "Categorizes each drink",
+      point2: "Gives use cases for VR's  ",
+      point3: "Sign up and Contact forms ",
 
       link: "https://hydra-vr-page.netlify.app",
     },
@@ -86,11 +89,8 @@ const Projects = () => {
       id: 5,
       image: Bootstrap_Screenshot,
       title: "Bootstrap Landing Page",
-      subtitle: `Bootstrap Landding Page is 
-      a visually appealing design for an educational 
-      landing page. This landing page was buildth solely 
-      using Bootstap , there show casing my skill in using
-       the Bootstarp framework `,
+      subtitle:
+        "The Bootstrap Landing Page is an aesthetically pleasing design specifically crafted for an educational landing page. This page is exclusively built using Bootstrap, showcasing my proficient skills in utilizing the Bootstrap framework.",
       // point1: "info about your favourite drinks",
       // point2: "gives detailed instructions on how to make a different drinks ",
       // point3: "listes out ingredience needed to make each drink",

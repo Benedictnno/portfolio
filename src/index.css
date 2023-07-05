@@ -433,6 +433,7 @@ font-family: var(--styled-font-family);
   .Stack_contain {
       display: grid;
       grid-template-columns: repeat(2,6fr );
+      place-items: center;
       color: var(--main-color3);
       font-weight: 600;
     }
@@ -505,7 +506,7 @@ font-family: var(--styled-font-family);
     .Buttom {
       display: grid;
       grid-template-columns: min-content;
-    
+    /* margin-top: ; */
     }
     .Top_main{
      margin-top: 5rem;

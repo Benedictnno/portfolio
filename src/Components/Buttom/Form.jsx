@@ -17,20 +17,12 @@ const FormData = () => {
       [event.target.name]: event.target.value,
     });
   };
-
-
-  //  const handleSubmit = (event) => {
-    
-  //    console.log(formData);
-  //  };
-
   return (
     <form
       // onSubmit={handleSubmit}
       className="form "
       action="https://formspree.io/f/xayzrjgl"
       method="POST"
-      // className=""
     >
       <label>
         Full Name:
