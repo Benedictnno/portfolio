@@ -7,7 +7,7 @@ import Nav from "./Nav";
 import Quotes from "./Quotes";
 import Resume from '../../images/Resume.pdf'
 const Top = () => {
-  const name = ["B", "E", "N", "E", "D", "I", "C", "T"];
+ 
    useEffect(() => {
      Aos.init({ duration: 1000 });
    }, []);
@@ -17,24 +17,21 @@ const Top = () => {
       <main className="Top_main bg-slate-500">
         <section className="intro" data-aos="fade-right">
           <h1 className="">
-            Hi <MdWavingHand className="wave_animation" /> I'm
+            Hi <MdWavingHand className="wave_animation" /> I'm 
             <span className="name">
-              {name.map((text, index) => {
-                return (
-                  <span key={index} className="each_letter">
-                    {text}
+              {/* {name.map((text, index) => { */}
+                {/* return ( */}
+                  <span> </span><span className="each_letter">
+                     Benedict Nnaoma 
                   </span>
-                );
-              })}
+                {/* );
+              })} */}
             </span>
           </h1>
           <br />
           <h1 className="frontend ">Frontend web developer </h1>
           <blockquote>
             <Quotes />
-            {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus sed
-            velit ipsum libero consectetur mollitia rem maxime quam porro
-            aliquam. */}
           </blockquote>
 
           <div className="top_btn_container">
@@ -49,13 +46,13 @@ const Top = () => {
               </a>
             </button>
             <button type="button " className="contact   ">
-              <a href="#contact">Contact developer</a>{" "}
+              <a href="#contact">Contact developer</a>
             </button>
           </div>
         </section>
 
         <section data-aos="fade-left">
-          <img src={womenImg} alt="" className="top_image" />
+          <img src={womenImg} alt="" className="top_image"/>
         </section>
       </main>
 

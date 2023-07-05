@@ -27,9 +27,10 @@ const FormData = () => {
   return (
     <form
       // onSubmit={handleSubmit}
-      className="form"
+      className="form "
       action="https://formspree.io/f/xayzrjgl"
       method="POST"
+      // className=""
     >
       <label>
         Full Name:
@@ -63,21 +64,22 @@ const FormData = () => {
       </label>
       <label>
         <p> Write on reason:</p>
-        <textarea
-          name="Subject"
-          id=""
-          cols="23"
-          rows="5"
-          className="form_input"
-          value={Subject}
-          onChange={handleChange}
-        ></textarea>
+        <div>
+          <textarea
+            name="Subject"
+            id=""
+            cols="23"
+            rows="5"
+            className="form_input textarea"
+            value={Subject}
+            onChange={handleChange}
+          ></textarea>
+        </div>
       </label>
       <button type="submit" className="p_btn">
         Submit
       </button>
     </form>
-   
   );
 };
 

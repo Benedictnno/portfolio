@@ -3,7 +3,7 @@ import FormData from "./Form";
 import Contact from './Contact'
 const Buttom = () => {
   return (
-    <>
+    <section className='buttom_container'>
       <div className="custom-shape-divider-bottom-1686439584">
         <svg
           data-name="Layer 1"
@@ -21,7 +21,7 @@ const Buttom = () => {
         <Contact />
         <FormData />
       </div>
-    </>
+    </section>
   );
 }
 

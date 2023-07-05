@@ -11,6 +11,11 @@
   --styled-font-family: 'Lora', serif;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -20,6 +25,7 @@ body{
   background-color: #f4f6f8;
   margin: 0;
     padding: 0;
+    /* width: 100%; */
 }
 .app{
   width: fit-content;
@@ -115,11 +121,13 @@ white-space: nowrap;
 }
 
 .about_Me{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1 ,3fr 6fr);
   font-family: var(--title-font-family);
-  justify-content: center;
-  align-items: center;
-  white-space: break-spaces;
+  place-items: center;
+  /* justify-content: center;
+  align-items: center;*/
+  white-space: break-spaces; 
 }
 
 .about{
@@ -182,12 +190,13 @@ white-space: nowrap;
 }
 
 .top_image{
-  margin: 0 2rem 10rem 25rem;
+  margin: 0 0 9rem 7rem;
   padding: 5rem;
   background-image: url(images/blob-haikei.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
 }
 
 .pop_container{
@@ -209,7 +218,8 @@ white-space: nowrap;
 }
 
 .wave_animation{
-  animation: wave 1.5s 1s ease-in-out infinite;
+  animation: wave 1.5s 1s ease-in-out infinite alternate-reverse;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 @keyframes wave {
@@ -254,8 +264,13 @@ white-space: nowrap;
   color: #fff;
   border: none;
   width: 100%;
-  margin: 0 ;
+  margin: -.5rem 0 0 0   ;
   padding: 0 0 2rem 0;
+}
+
+.buttom_container{
+  width: 100vw;
+margin-left: -1rem;
 }
 
 .form{
@@ -280,6 +295,14 @@ margin: 0 auto;
   border-radius: 5px;
   padding:0 .5rem;
 }
+
+.textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .copy{
   display: flex;
   flex-direction: column;
@@ -291,7 +314,7 @@ margin: 0 auto;
     border: none;
     padding: .5rem;
     color: #fff;
-    margin: 0 1rem;
+    margin: 0 .3rem;
     border-radius: 5px;
     box-shadow: #fff;
     cursor: pointer;
@@ -302,6 +325,7 @@ margin: 0 auto;
   border: none;
   font-size: large;
   cursor: pointer;
+  color: #e5eaee;
 }
 
 /* wave 1 */
@@ -433,7 +457,7 @@ font-family: var(--styled-font-family);
     position: none;
     left: 0%;
     width: 100vw;
-   text-align: ;
+
   }
   .top_btn_container {
   display: grid;
