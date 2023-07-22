@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import { toast  } from "react-toastify";
 const FormData = () => {
 
   const [formData, setFormData] = useState({
@@ -68,7 +68,7 @@ const FormData = () => {
           ></textarea>
         </div>
       </label>
-      <button type="submit" className="p_btn">
+      <button type="submit" className="p_btn"  onClick={()=> toast.success('Your Message has been succesfully submitted')}>
         Submit
       </button>
     </form>

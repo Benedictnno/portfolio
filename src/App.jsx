@@ -4,6 +4,8 @@ import Top from "./Components/Top/Top";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Buttom from "./Components/Buttom/Buttom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export const Appcomponet = createContext();
 
 function App() {
@@ -11,9 +13,7 @@ function App() {
   const [open, setOpen] = useState(false);
  
   return (
-    <Appcomponet.Provider
-      value={{  open, setOpen }}
-    >
+    <Appcomponet.Provider value={{ open, setOpen }}>
       <main className="app">
         <motion.div
           className="progress-bar"
@@ -25,6 +25,7 @@ function App() {
         <hr />
         <Projects />
         <Buttom />
+        <ToastContainer />
       </main>
     </Appcomponet.Provider>
   );
