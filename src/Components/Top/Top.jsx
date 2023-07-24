@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import womenImg from '../../images/womenImg.svg'
+import Me from '../../images/my_image_2.jpg'
 import { MdWavingHand } from "react-icons/md";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,13 +20,11 @@ const Top = () => {
           <h1 className="">
             Hi <MdWavingHand className="wave_animation" /> I'm 
             <span className="name">
-              {/* {name.map((text, index) => { */}
-                {/* return ( */}
+             
                   <span> </span><span className="each_letter">
                      Benedict Nnaoma 
                   </span>
-                {/* );
-              })} */}
+                
             </span>
           </h1>
           <br />
@@ -52,7 +51,7 @@ const Top = () => {
         </section>
 
         <section data-aos="fade-left">
-          <img src={womenImg} alt="" className="top_image"/>
+          <img src={Me} alt="" className="top_image"/>
         </section>
       </main>
 

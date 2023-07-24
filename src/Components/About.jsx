@@ -3,6 +3,7 @@ import womenImg from "./../images/womenImg.svg";
 import { FaHtml5, FaReact, FaFigma } from "react-icons/fa";
 import { BsFiletypeCss } from "react-icons/bs";
 import { SiJavascript, SiRedux, SiFirebase } from "react-icons/si";
+import Me from "./../images/my_image_2.jpg";
 
 const About = () => {
   const teach = [
@@ -40,7 +41,7 @@ const About = () => {
     <main className="about_container" id="about">
       <h1 className="about">About Me </h1>
       <section className="about_Me">
-        <img src={womenImg} alt="" />
+        <img src={Me} alt="" />
         <div>
           <p>
             Hey there! I'm Benedict Nnaoma, a passionate Frontend developer with

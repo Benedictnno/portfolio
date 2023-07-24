@@ -24,8 +24,8 @@ body{
   scroll-behavior: smooth;
   background-color: #f4f6f8;
   margin: 0;
-    padding: 0;
-    /* width: 100%; */
+  padding: 0;
+  font-size: 1.2rem;
 }
 .app{
   width: fit-content;
@@ -73,19 +73,8 @@ letter-spacing: 1px;
   font-family: var(--main-font-family);
 }
 
-.each_letter{
-  transition: 1s ease-in-out;
-}
-
-.each_letter:hover{
-  cursor: pointer;
-  transform: scale(1.2);
-}
 
 .centered-container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   height: 50vh;
 }
 
@@ -125,11 +114,12 @@ white-space: nowrap;
   grid-template-columns: repeat(1 ,3fr 6fr);
   font-family: var(--title-font-family);
   place-items: center;
-  /* justify-content: center;
-  align-items: center;*/
   white-space: break-spaces; 
 }
 
+.about_Me > img{
+  max-height: 400px;
+}
 .about{
   text-align: center;
   font-family: var(--title-font-family);
@@ -196,7 +186,8 @@ white-space: nowrap;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-
+  max-width: 400px;
+  border-radius: 20px  40px 10px 20px ;
 }
 
 .pop_container{
@@ -211,7 +202,6 @@ white-space: nowrap;
   box-shadow: #99b8cf 5px 5px 20px;
   border-radius: 10px;
  display: block;
- 
   background-color: #fff;
   font-family: var(--styled-font-family);
   max-width: 50vw;
@@ -369,7 +359,7 @@ margin: 0 auto;
 }
 
 .custom-shape-divider-bottom-1686522821 .shape-fill {
-  fill: #E3ECF5;
+  fill: #a7b5c4;
 }
 /* end */
 .custom-shape-divider-bottom-1686523959 {
@@ -390,7 +380,7 @@ margin: 0 auto;
 }
 
 .custom-shape-divider-bottom-1686523959 .shape-fill {
-  fill: #E9EFF5;
+  fill: #c0cfdf;
 }
 .wave3{
   position: absolute;
@@ -429,6 +419,37 @@ font-family: var(--styled-font-family);
   text-align: center;
 }
 
+.services_container{
+  display: flex;
+  justify-content:space-around;
+
+}
+
+.g_service{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+    height: auto;
+    margin: 1rem;
+    border: #89aac3;
+    box-shadow: #bed1df 5px 5px 20px;
+    border-radius: 10px;
+    padding: 0 0 1rem 0;
+}
+
+.services{
+  text-align: center;
+}
+.mid_service{
+  background-color: #23394d;
+  color: #fff;
+}
+
+.Fire_Icon{
+  color: orange;
+}
 @media screen and (max-width: 768px) {
   .Stack_contain {
       display: grid;
@@ -499,19 +520,24 @@ font-family: var(--styled-font-family);
     max-width: 100%;
     background-color: #fff;
   }
-    .custom-shape-divider-bottom-1686522821 svg{
-      height: 60px;
-      margin: 30rem 0 0 0;
-    }
-    .Buttom {
-      display: grid;
-      grid-template-columns: min-content;
-    /* margin-top: ; */
-    }
-    .Top_main{
-     margin-top: 5rem;
-    }
-    .contact{
-     margin: 0;
-    }
+  .custom-shape-divider-bottom-1686522821 svg{
+    height: 60px;
+    margin: 30rem 0 0 0;
+  }
+  .Buttom {
+    display: grid;
+    grid-template-columns: min-content;
+  /* margin-top: ; */
+  }
+  .Top_main{
+    margin-top: 5rem;
+  }
+  .contact{
+    margin: 0;
+  }
+
+  .g_service{
+    display: flex;
+    flex-direction: row;
+  }
 }
