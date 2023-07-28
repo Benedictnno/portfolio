@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { toast } from "react-toastify";
 
 const CopyText = ({text,icon,title,link}) => {
   const [copied, setCopied] = useState(false);
@@ -31,10 +32,11 @@ const CopyText = ({text,icon,title,link}) => {
       </a>
       <CopyToClipboard text={text} onCopy={handleCopy}>
         <button
-          className={copied ? "p_btn_red" : "p_btn"}
+          className= "p_btn"
           disabled={copied ? "disabled" : null}
+          onClick={() => toast.success("Copied")}
         >
-          {copied ? " Copied!" : "Copy"}
+          Copy
         </button>
       </CopyToClipboard>
     </div>

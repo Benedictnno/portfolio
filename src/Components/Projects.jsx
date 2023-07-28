@@ -29,9 +29,9 @@ const Projects = () => {
     {
       id: 0,
       image: sparrow_Screenshot,
-      title: "Comfy Sloth",
+      title: "Sparrow Networkx",
       subtitle:
-        "Confy Sloth is an ongoing ecommerce project—an engaging web application designed for a furniture company. This ecommerce platform is built using React.js, leveraging its robust features and capabilities to provide an exceptional user experience for customers browsing and purchasing furniture products.",
+        "Sparrow Networkx is an ongoing e-commerce project—an engaging web application designed for a furniture company. This ecommerce platform is built using React.js, leveraging its robust features and capabilities to provide an exceptional user experience for customers browsing and purchasing furniture products.",
       link: "https://sparrow-networkx.netlify.app",
     },
     {
@@ -126,8 +126,8 @@ const Projects = () => {
         </article>
       </section>
 
-      <div>
-        <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+      <div className="model">
+        <Modal isOpen={modalIsOpen} onRequestClose={closeModal} >
           {Project.map(
             ({ title, subtitle, point1, point2, point3, point4, link, id }) => {
               if (id === idT) {
@@ -142,12 +142,15 @@ const Projects = () => {
                       {point3 && <li>{point3}</li>}
                       {point4 && <li>{point4}</li>}
                     </ul>
+                    <div className="model">
                     <a href={link} target="_blank">
                       <button className="contact">View Live Site</button>
                     </a>
                     <button onClick={closeModal} className="contact p_btn_red">
                       Close
                     </button>
+
+                    </div>
                   </article>
                 );
               }

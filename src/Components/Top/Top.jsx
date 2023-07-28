@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import womenImg from '../../images/womenImg.svg'
+import womenImg from '../../images/New_me4.png'
 import Me from '../../images/my_image_2.jpg'
 import { MdWavingHand } from "react-icons/md";
 import Aos from "aos";
@@ -51,7 +51,7 @@ const Top = () => {
         </section>
 
         <section data-aos="fade-left">
-          <img src={Me} alt="" className="top_image"/>
+          <img src={womenImg} alt="" className="top_image"/>
         </section>
       </main>
 

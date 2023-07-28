@@ -26,7 +26,7 @@ function App() {
         <Services />
         <Projects />
         <Buttom />
-        <ToastContainer />
+        <ToastContainer position="bottom-left"/>
       </main>
     </Appcomponet.Provider>
   );

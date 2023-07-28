@@ -5,9 +5,17 @@ import { SiReact, SiFirebase } from "react-icons/si";
 
 const Services = () => {
   const data = [
-    { title: "Web scrapping", text: "", icon: <GiWebSpit /> },
-    { title: "Frontend Web development ", text: "", icon: <SiReact /> },
-    { title: "Backend with Firebase", text: "", icon: <SiFirebase /> },
+    {
+      title: "Web scrapping with Puppeteer",
+      text: "Puppeteer web scraping showcases automation and data extraction skills. As a web developer, I've successfully gathered valuable information from diverse websites.",
+      icon: <GiWebSpit />,
+    },
+    {
+      title: "Frontend Web development ",
+      text: "I specialize in frontend web development with React.js. Utilizing this powerful JavaScript library, I create engaging and dynamic user interfaces for diverse web applications. My expertise in HTML, CSS, and JavaScript enables me to bring creative and functional designs to life using React.js.",
+      icon: <SiReact />,
+    },
+    { title: "Backend with Firebase", text: "As an experienced Backend Web Developer, I use Firebase to build robust and scalable web applications. It's a powerful cloud-based platform that streamlines development, enabling me to focus on creating innovative features.", icon: <SiFirebase /> },
   ];
   return (
     <section className="services">
@@ -20,7 +28,7 @@ const Services = () => {
                 index === 1 ? "mid_service g_service" : "service g_service"
               }
             >
-              <h1 className={index === 2 ? "Fire_Icon" : ""}>{icon}</h1>
+              <h1 className={index === 2 ? "Fire_Icon" : "icons"}>{icon}</h1>
               <h2>{title}</h2>
               <hr />
               <p>{text}</p>
