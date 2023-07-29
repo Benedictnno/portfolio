@@ -15,7 +15,7 @@ const Top = () => {
   return (
     <>
       <Nav />
-      <main className="Top_main bg-slate-500">
+      <main className="Top_main">
         <section className="intro" data-aos="fade-right">
           <h1 className="">
             Hi <MdWavingHand className="wave_animation" /> I'm 

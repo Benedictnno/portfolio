@@ -1,6 +1,7 @@
 import React from "react";
 import { GiWebSpit } from "react-icons/gi";
 import { SiReact, SiFirebase } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
 // import { styles } from "styled-components";
 
 const Services = () => {
@@ -13,9 +14,13 @@ const Services = () => {
     {
       title: "Frontend Web development ",
       text: "I specialize in frontend web development with React.js. Utilizing this powerful JavaScript library, I create engaging and dynamic user interfaces for diverse web applications. My expertise in HTML, CSS, and JavaScript enables me to bring creative and functional designs to life using React.js.",
-      icon: <SiReact />,
+      icon: <FaReact />,
     },
-    { title: "Backend with Firebase", text: "As an experienced Backend Web Developer, I use Firebase to build robust and scalable web applications. It's a powerful cloud-based platform that streamlines development, enabling me to focus on creating innovative features.", icon: <SiFirebase /> },
+    {
+      title: "Backend with Firebase",
+      text: "As an experienced Backend Web Developer, I use Firebase to build robust and scalable web applications. It's a powerful cloud-based platform that streamlines development, enabling me to focus on creating innovative features.",
+      icon: <SiFirebase />,
+    },
   ];
   return (
     <section className="services">
@@ -28,9 +33,8 @@ const Services = () => {
                 index === 1 ? "mid_service g_service" : "service g_service"
               }
             >
-              <h1 className={index === 2 ? "Fire_Icon" : "icons"}>{icon}</h1>
+              <h1 className={index === 2 ? "Fire_Icon" : ""}>{icon || ""}</h1>
               <h2>{title}</h2>
-              <hr />
               <p>{text}</p>
             </div>
           );

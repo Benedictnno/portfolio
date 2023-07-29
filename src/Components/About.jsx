@@ -1,5 +1,4 @@
 import React from "react";
-import womenImg from "./../images/womenImg.svg";
 import { FaHtml5, FaReact, FaFigma } from "react-icons/fa";
 import { BsFiletypeCss } from "react-icons/bs";
 import { SiJavascript, SiRedux, SiFirebase } from "react-icons/si";
