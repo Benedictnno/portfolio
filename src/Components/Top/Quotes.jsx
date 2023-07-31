@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Quotes = () => {
   const Data = [
@@ -49,22 +49,37 @@ const Quotes = () => {
     },
   ];
 
-  // Generate a random index within the range of the array length
-
-  // Access the element at the random index
-  function random() {
-      const randomIndex = Math.floor(Math.random() * Data.length);
-      const randomQuotes = Data[randomIndex];
-    return randomQuotes;
+  const [num, setNumber] = useState(1);
+  const [quote, setQuote] = useState(Data[3]);
+  
+  function changeQuote(type) {
+    if (type === "inc") {
+      if (num >= Data.length - 1) {
+        setNumber(0);
+      } else {
+        setNumber(num + 1);
+      }
+    } else if (type === "dec") {
+      if (num <= 0) {
+        setNumber(Data.length - 1);
+      } else {
+        setNumber(num - 1);
+      }
+    }
+    setQuote(Data[num]);
   }
-  setInterval(console.log(random()), 1000);
-
-  // console.log(randomNumber);
 
   return (
     <div>
-      {random().quotes}
-      {/* {randomQuotes.quotes} -{randomQuotes.by} */}
+      <blockquote className="quote">
+        <p>{quote.quotes}</p> - <span>{quote.by}</span>
+      </blockquote>
+      <button onClick={() => changeQuote("dec")} className="next">
+        prev
+      </button>
+      <button onClick={() => changeQuote("inc")} className="next">
+        Next
+      </button>
     </div>
   );
 };

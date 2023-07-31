@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import womenImg from '../../images/New_me4.png'
-import Me from '../../images/my_image_2.jpg'
 import { MdWavingHand } from "react-icons/md";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -18,13 +17,10 @@ const Top = () => {
       <main className="Top_main">
         <section className="intro" data-aos="fade-right">
           <h1 className="">
-            Hi <MdWavingHand className="wave_animation" /> I'm 
+            Hi <MdWavingHand className="wave_animation" /> I'm
             <span className="name">
-             
-                  <span> </span><span className="each_letter">
-                     Benedict Nnaoma 
-                  </span>
-                
+              <span> </span>
+              <span className="each_letter">Benedict Nnaoma</span>
             </span>
           </h1>
           <br />
@@ -34,12 +30,7 @@ const Top = () => {
           </blockquote>
 
           <div className="top_btn_container">
-            <button
-              data-aos="flip-up"
-              data-aos-duration="3000"
-              type="button"
-              className="top_btn contact animate__shakeY "
-            >
+            <button type="button" className="top_btn contact animate__shakeY ">
               <a href={Resume} download={"Benedict-Nnaoma.pdf"}>
                 Download Resume
               </a>
@@ -51,7 +42,7 @@ const Top = () => {
         </section>
 
         <section data-aos="fade-left">
-          <img src={womenImg} alt="" className="top_image"/>
+          <img src={womenImg} alt="" className="top_image" />
         </section>
       </main>
 
@@ -64,7 +55,7 @@ const Top = () => {
         >
           <path
             d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            className="shape-fill"
+            className="shape-fill top_svg"
           ></path>
         </svg>
       </div>
@@ -78,7 +69,7 @@ const Top = () => {
         >
           <path
             d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-            className="shape-fill"
+            className="shape-fill top_svg"
           ></path>
         </svg>
       </div>
