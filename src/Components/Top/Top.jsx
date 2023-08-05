@@ -11,6 +11,8 @@ const Top = () => {
    useEffect(() => {
      Aos.init({ duration: 1000 });
    }, []);
+
+   
   return (
     <>
       <Nav />

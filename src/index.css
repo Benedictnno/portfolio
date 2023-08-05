@@ -438,14 +438,19 @@ margin: 0 auto;
   margin-bottom: 2rem;
 }
 .model{
-  margin: 2rem -1rem;
+  font-family: var( --title-font-family);
+  font-size:1.15rem ;
+  word-spacing: 2px;
+}
+.model>ul>li{
+  font-size: 1.1rem;
+
+  /* font-family: var(--styled-font-family); */
+  font-weight: 100;
+  margin-bottom: 1rem;
 }
 
 .g_service{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   display: block;
   height: auto;
   width: 300px;
@@ -535,6 +540,11 @@ margin: 0 auto;
 .quote>span{
   font-weight: 600;
   font-size: var(--small-fonts);
+}
+
+.close_flex{
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 425px) {
