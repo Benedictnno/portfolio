@@ -25,14 +25,11 @@ body{
   background-color: #f4f6f8;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .app{
   width: fit-content;
   margin: 0 1rem;
-}
-p,button,label{
-  /* font-size: 1.3rem; */
-  
 }
 
 button{
@@ -528,6 +525,7 @@ margin: 0 auto;
   padding: 5px;
   font-size: 1.1rem;
   color: var(--main-color4);
+  font-size: larger;
 }
 .next:active{
   color: #d31424;
@@ -557,11 +555,15 @@ margin: 0 auto;
   }
 
  .intro {
-   margin-top: -2rem;
+   margin-top: 13rem;
    display: block;
 
  }
+ .about_Me>div>p{
+  padding: 0 10px;
+ }
 
+ 
  .top_svg{
   display: none;
  }
@@ -597,6 +599,13 @@ margin: 0 auto;
     width: 100vw;
 
   }
+  .buttom_container{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    /* padding-right: -20rem; */
+  }
+
   .top_btn_container {
   display: grid;
   grid-template-columns: repeat(2,6fr);
@@ -637,6 +646,7 @@ margin: 0 auto;
     max-width: 100%;
     background-color: #fff;
   }
+    
   .custom-shape-divider-bottom-1686522821 svg{
     height: 60px;
     margin: 30rem 0 0 0;
@@ -647,7 +657,8 @@ margin: 0 auto;
   }
   .Top_main{
     margin-top: 2rem;
-    display: block;
+    display: flex;
+    margin: 2rem auto;
 
   }
   .contact{

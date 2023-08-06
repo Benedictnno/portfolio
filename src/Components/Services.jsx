@@ -32,6 +32,7 @@ const Services = () => {
               className={
                 index === 1 ? "mid_service g_service" : "service g_service"
               }
+              key={index}
             >
               <h1 className={index === 2 ? "Fire_Icon" : ""}>{icon || ""}</h1>
               <h2>{title}</h2>

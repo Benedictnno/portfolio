@@ -70,11 +70,11 @@ const Projects = () => {
       title: "JobSter",
       subtitle: `JobTracker is a revolutionary web application designed to streamline and organize your job search process. Finding your dream job has never been easier, thanks to our feature-rich platform that allows you to effortlessly store and track all your job applications, interviews, offers, and rejections in one convenient place.`,
       point1:
-        "Effortless Application Tracking: Say goodbye to scattered spreadsheets and notes. JobTrackr lets you log all your job applications with essential details like company name, job title, application date, and more. With just a few clicks, you can add new applications or update existing ones.",
+        "Effortless Application Tracking: Say goodbye to scattered spreadsheets and notes. JobTracker lets you log all your job applications with essential details like company name, job title, application date, and more. With just a few clicks, you can add new applications or update existing ones.",
       point2:
-        "Centralized Offer and Rejection Management: Receive an offer? Update your JobTrackr profile and keep a record of all the exciting opportunities that come your way.",
+        "Centralized Offer and Rejection Management: Receive an offer? Update your JobTracker profile and keep a record of all the exciting opportunities that come your way.",
       point3:
-        "Visual Insights with Bar and Area Charts: JobTrackr goes beyond mere data storage. Our interactive charts provide you with insightful visualizations of your job search progress. The bar chart displays the number of job applications made each month, giving you a clear overview of your activity levels over time. The area chart reveals trends and patterns in your job application history, helping you refine your strategy for success.",
+        "Visual Insights with Bar and Area Charts: JobTracker goes beyond mere data storage. Our interactive charts provide you with insightful visualizations of your job search progress. The bar chart displays the number of job applications made each month, giving you a clear overview of your activity levels over time. The area chart reveals trends and patterns in your job application history, helping you refine your strategy for success.",
       point4:
         "Smart Filters and Search: With an ever-increasing number of job applications, finding specific details can become overwhelming. Fear not! JobTrackr comes with smart filtering and search options that allow you to quickly locate any job application, interview, or other vital information.",
 
