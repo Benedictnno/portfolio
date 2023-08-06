@@ -1,5 +1,3 @@
-import React, { useState } from 'react'
-import { CopyToClipboard } from 'react-copy-to-clipboard'
 import {
   AiFillPhone,
   AiFillMail,
@@ -30,9 +28,6 @@ const Contact = () => {
       },
     ];
     
-     const handleCopy = () => {
-       setCopied(true);
-     };
   return (
     <div className="copy" id="contact">
       {data.map((copy) => {
