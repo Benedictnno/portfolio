@@ -18,7 +18,7 @@ const Services = () => {
     },
     {
       title: "Backend with Firebase",
-      text: "As an experienced Backend Web Developer, I use Firebase to build robust and scalable web applications. It's a powerful cloud-based platform that streamlines development, enabling me to focus on creating innovative features.",
+      text: "As an experienced Frontend Web Developer, I use Firebase to build robust and scalable web applications. It's a powerful cloud-based platform that streamlines development, enabling me to focus on creating innovative features.",
       icon: <SiFirebase />,
     },
   ];

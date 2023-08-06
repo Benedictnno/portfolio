@@ -69,7 +69,7 @@ const FormData = () => {
         </div>
       </label>
       <button type="submit" className="p_btn"  onClick={()=> toast.success('Your Message has been succesfully submitted')}>
-        Submit
+        Send
       </button>
     </form>
   );
