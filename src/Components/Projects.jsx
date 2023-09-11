@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import gitHub from "../images/gitHub.png";
 import coctail from "../images/coctail.png";
 import sparrow_Screenshot from "../images/sparrow_Screenshot.png";
-import hackerNews_Screenshot from "../images/hackerNews_Screenshot.png";
-import Bootstrap_Screenshot from "../images/Bootstrap_Screenshot.png";
+import big_ben from "../images/big_ben.png";
 import hydrapage_Screenshot from "../images/hydrapage_Screenshot .png";
 import jobStore from "../images/jobStore.png";
 import Aos from "aos";
@@ -29,6 +28,25 @@ const Projects = () => {
   const Project = [
     {
       id: 0,
+      image: big_ben,
+      title: "Big Ben's Blog",
+      subtitle:
+        " Big Ben's Blog is a dynamic and user-friendly web application designed to provide a platform for multiple bloggers to share their thoughts, insights, and expertise with a global audience. This innovative blogging platform is meticulously crafted to cater to the diverse needs of bloggers, ensuring a seamless and engaging experience for both writers and readers alike.",
+      link: "https://big-bens-blog.netlify.app",
+      points1:
+        "Multi-Author Support: One of the standout features of Big Ben's Blog is its robust multi-author support. It allows a community of bloggers, ranging from professionals to hobbyists, to contribute their unique perspectives and content to a shared platform. Each author has their own profile, where they can showcase their expertise and build their personal brand.",
+      point2:
+        "User-Friendly Interface: The user interface of the platform is designed with both bloggers and readers in mind. It offers an intuitive, visually appealing, and easy-to-navigate layout, making it accessible to users of all technological backgrounds. Bloggers can effortlessly create and manage their posts, while readers can explore a wealth of content without any technical barriers.",
+      point3:
+        "Customizable Blog Posts: Big Ben's Blog empowers bloggers with a wide range of formatting options. Authors can format their posts using rich text editing tools, upload images, embed links, and even add code snippets for technical articles. This ensures that bloggers have full creative control over their content.",
+      point4:
+        "Comment and Interaction Features: Interactivity is a crucial aspect of blogging, and Big Ben's Blog embraces it wholeheartedly. Readers can leave comments on blog posts, facilitating discussions and engagement between authors and their audience. ",
+      point5:
+        "Responsive Design: Big Ben's Blog boasts a responsive design, ensuring that it adapts seamlessly to various devices and screen sizes. Whether users access the platform on a desktop, tablet, or mobile phone, they can enjoy a consistent and visually pleasing experience.",
+    },
+
+    {
+      id: 1,
       image: sparrow_Screenshot,
       title: "Sparrow Networkx",
       subtitle:
@@ -45,7 +63,7 @@ const Projects = () => {
       point5: "most forked repos",
     },
     {
-      id: 1,
+      id: 2,
       image: gitHub,
       title: "Git Hub search Info ",
       subtitle:
@@ -101,23 +119,6 @@ const Projects = () => {
     },
     {
       id: 5,
-      image: hackerNews_Screenshot,
-      title: "HackerNews",
-      subtitle:
-        "HackerNews is a dynamic news web application that provides comprehensive coverage on any topic you search for, ensuring the latest updates are readily accessible.",
-      point1:
-        "Comprehensive Coverage: Our platform offers comprehensive coverage on a wide range of topics, from technology and business to science, entertainment, and global events.",
-      point2:
-        "Intelligent Search: With an advanced search function, you can easily find articles and information on specific subjects, making it effortless to explore your interests.",
-      point3:
-        "Diverse Perspectives: HackerNews aggregates content from various sources to provide you with a well-rounded view of any given topic, including different perspectives and viewpoints.",
-      point4:
-        "User-Friendly Interface: The intuitive interface makes navigation a breeze, allowing you to quickly access the content you're looking for.",
-
-      link: "https://hackernews1.netlify.app",
-    },
-    {
-      id: 6,
       image: hydrapage_Screenshot,
       title: "Hydra Landing Page",
       subtitle: `Welcome to Hydra, the immersive gateway to unforgettable virtual reality experiences that transport you to extraordinary worlds `,
@@ -161,7 +162,17 @@ const Projects = () => {
       <div className="model">
         <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
           {Project.map(
-            ({ title, subtitle, point1, point2, point3, point4,point5, link, id }) => {
+            ({
+              title,
+              subtitle,
+              point1,
+              point2,
+              point3,
+              point4,
+              point5,
+              link,
+              id,
+            }) => {
               if (id === idT) {
                 return (
                   <article className="model" data-aos="fade-up">

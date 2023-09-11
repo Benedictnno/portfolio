@@ -55,7 +55,6 @@ button{
 .intro> h1{
   font-size: var(--big-fonts);
 letter-spacing: 1px;
-
 }
 .intro> blockquote{
   white-space: wrap;
@@ -75,7 +74,6 @@ letter-spacing: 1px;
   font-size: var(--big-fonts);
   font-family: var(--main-font-family);
 }
-
 
 .centered-container {
   height: 50vh;
@@ -659,8 +657,6 @@ margin: 0 auto;
     grid-template-columns: min-content;
   }
   .Top_main{
-    margin-top: 2rem;
-    display: flex;
     margin: 2rem auto;
 
   }
