@@ -8,7 +8,7 @@ import jobStore from "../images/jobStore.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Modal from "react-modal";
-
+import {AiOutlineClose} from 'react-icons/ai'
 const Projects = () => {
   const [idT, setId] = useState(false);
 
@@ -140,7 +140,7 @@ const Projects = () => {
         <article className="project_container">
           {Project.map(({ image, title, id }) => {
             return (
-              <div className="mainp_container " data-aos="fade-up" key={id}>
+              <div className="mainp_container " key={id} data-aos="fade-up" key={id}>
                 <img src={image} alt={title} data-aos="zoom-in" />
                 <div className="btn_container">
                   <h3>{title}</h3>
@@ -182,7 +182,7 @@ const Projects = () => {
                         onClick={closeModal}
                         className="contact p_btn_red"
                       >
-                        Close
+                        <AiOutlineClose/>
                       </button>
                     </div>
 

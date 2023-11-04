@@ -34,16 +34,7 @@ const FormData = () => {
           className="form_input"
         />
       </label>
-      <label>
-        Reason for contact:
-        <input
-          type="text"
-          name="Reason"
-          value={Reason}
-          className="form_input"
-          onChange={handleChange}
-        />
-      </label>
+      
       <label>
         Email:
         <input
@@ -55,7 +46,7 @@ const FormData = () => {
         />
       </label>
       <label>
-        <p> Write on reason:</p>
+        <p> Reason for contact:</p>
         <div>
           <textarea
             name="Subject"
@@ -68,7 +59,13 @@ const FormData = () => {
           ></textarea>
         </div>
       </label>
-      <button type="submit" className="p_btn"  onClick={()=> toast.success('Your Message has been succesfully submitted')}>
+      <button
+        type="submit"
+        className="p_btn"
+        onClick={() =>
+          toast.success("Your Message has been succesfully submitted")
+        }
+      >
         Send
       </button>
     </form>

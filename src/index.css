@@ -44,6 +44,7 @@ button{
  grid-template-columns: repeat(1, 5fr 4fr);
  place-items: center;
  height: 100vh;
+ margin-top: -5rem;
  place-content: center;
 }
 
@@ -51,6 +52,7 @@ button{
   width: fit-content;
   margin-bottom: 10rem;
 }
+
 
 .intro> h1{
   font-size: var(--big-fonts);
@@ -84,7 +86,7 @@ letter-spacing: 1px;
 }
 .contact{
   background: #89aac3;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 padding: .5rem;
 color: #fff;
 border: none;
@@ -107,7 +109,7 @@ white-space: nowrap;
 .top_btn_container {
   margin-top: 2rem;
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
 }
 
 .about_Me{
@@ -300,10 +302,12 @@ margin: 0 auto;
 
 .p_btn_red{
   font-family: var(--title-font-family);
-    background-color: #d31424;
+  font-size: 2rem;
+  font-weight: bolder;
+    background-color: #fff;
     border: none;
     padding: .5rem;
-    color: #fff;
+    color: #d31424;
     margin: 0 .3rem;
     border-radius: 5px;
     box-shadow: #fff;
@@ -543,32 +547,8 @@ margin: 0 auto;
   justify-content: space-between;
 }
 
-@media screen and (max-width: 425px) {
-  .top_btn_container{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: -5rem;
-    width: 100%;
-    justify-content: center; 
-    align-items: center;
-  }
 
- .intro {
-   margin-top: 10rem;
-   display: block;
-   margin-left: 10px;
 
- }
-
- .about_Me>div>p{
-  padding: 0 10px;
- }
-
- 
- .top_svg{
-  display: none;
- }
-}
 @media screen and (max-width: 768px) {
   .Stack_contain {
       display: grid;
@@ -582,6 +562,9 @@ margin: 0 auto;
     margin-left: 0;
   }
 
+  .g_service{
+    width: 70vw;
+  }
   .app {
     width: fit-content;
     margin: 0;
@@ -604,14 +587,12 @@ margin: 0 auto;
     width: 100%;
     display: block;
     margin: 0 auto;
-    /* padding-right: -20rem; */
+    
   }
 
   .top_btn_container {
   display: grid;
   grid-template-columns: repeat(2,6fr);
-    margin-left: 10px;
-    margin-bottom: 5rem;
     place-content: center;
   }
   .mainp_container {
@@ -631,6 +612,9 @@ margin: 0 auto;
   }
 .inside_pop>button {
   margin-left: 7rem;
+}
+.top_svg {
+  display: none;
 }
   .pop_container {
     position: absolute;
@@ -657,11 +641,23 @@ margin: 0 auto;
     grid-template-columns: min-content;
   }
   .Top_main{
-    margin: 2rem auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: fit-content;
+   height: auto;
+   margin-top: 2rem;
+
+  }
+  .b-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   }
   .contact{
-    margin: 0;
+    margin: 5px;
   }
 
   .services_container{
@@ -680,8 +676,40 @@ margin: 0 auto;
   .service:hover {
     transform: scale(1);
   }
-  .top_btn_container{
+  
+
+  .contact{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .intro {
+    margin-top: 10rem;
+    display: block;
+    margin-left: 10px;
+  }
+
+  .about_Me>div>p {
+    padding: 0 10px;
+  }
+
+  .g_service {
+    width: 90vw;
+  }
+
+  .download {
+    margin-right: 5px;
+  }
+
+  .Top_main {
     display: flex;
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    margin-top: -10rem;
+
   }
 }
