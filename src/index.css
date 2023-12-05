@@ -44,7 +44,7 @@ button{
  grid-template-columns: repeat(1, 5fr 4fr);
  place-items: center;
  height: 100vh;
- margin-top: -5rem;
+ margin-top: -2rem;
  place-content: center;
 }
 

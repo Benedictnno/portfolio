@@ -5,10 +5,11 @@ import sparrow_Screenshot from "../images/sparrow_Screenshot.png";
 import big_ben from "../images/big_ben.png";
 import hydrapage_Screenshot from "../images/hydrapage_Screenshot .png";
 import jobStore from "../images/jobStore.png";
+import food_app from "../images/food_app.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Modal from "react-modal";
-import {AiOutlineClose} from 'react-icons/ai'
+import { AiOutlineClose } from "react-icons/ai";
 const Projects = () => {
   const [idT, setId] = useState(false);
 
@@ -28,23 +29,22 @@ const Projects = () => {
   const Project = [
     {
       id: 0,
-      image: big_ben,
-      title: "Big Ben's Blog",
+      image: food_app,
+      title: "Delicacy Hub",
       subtitle:
-        " Big Ben's Blog is a dynamic and user-friendly web application designed to provide a platform for multiple bloggers to share their thoughts, insights, and expertise with a global audience. This innovative blogging platform is meticulously crafted to cater to the diverse needs of bloggers, ensuring a seamless and engaging experience for both writers and readers alike.",
-      link: "https://big-bens-blog.netlify.app",
+        "Delicacy Hub is your go-to platform for all things food and drink. Whether you're a seasoned chef or a home cook looking for inspiration, we've got you covered. Explore a world of flavors, recipes, and culinary delights right at your fingertips.",
+      link: "https://delicacy-hub.netlify.app/",
       points1:
-        "Multi-Author Support: One of the standout features of Big Ben's Blog is its robust multi-author support. It allows a community of bloggers, ranging from professionals to hobbyists, to contribute their unique perspectives and content to a shared platform. Each author has their own profile, where they can showcase their expertise and build their personal brand.",
+        " Extensive Recipe Database: Browse through a vast collection of mouthwatering recipes curated from around the globe. From classic comfort foods to exotic dishes, we have something for every palate.",
       point2:
-        "User-Friendly Interface: The user interface of the platform is designed with both bloggers and readers in mind. It offers an intuitive, visually appealing, and easy-to-navigate layout, making it accessible to users of all technological backgrounds. Bloggers can effortlessly create and manage their posts, while readers can explore a wealth of content without any technical barriers.",
+        "Detailed Ingredients and Instructions: Get step-by-step guidance on each recipe, along with a comprehensive list of ingredients. Cooking has never been this easy and enjoyable!",
       point3:
-        "Customizable Blog Posts: Big Ben's Blog empowers bloggers with a wide range of formatting options. Authors can format their posts using rich text editing tools, upload images, embed links, and even add code snippets for technical articles. This ensures that bloggers have full creative control over their content.",
+        " Gorgeous Food Imagery: Immerse yourself in a visual feast with high-quality images of every recipe. Let the visuals inspire your next culinary masterpiece.",
       point4:
-        "Comment and Interaction Features: Interactivity is a crucial aspect of blogging, and Big Ben's Blog embraces it wholeheartedly. Readers can leave comments on blog posts, facilitating discussions and engagement between authors and their audience. ",
+        "Global Culinary Connection: Immerse yourself in the rich tapestry of global cuisine. Discover not just recipes but the stories behind them, as we take you on a virtual journey around the world through the lens of gastronomy.",
       point5:
-        "Responsive Design: Big Ben's Blog boasts a responsive design, ensuring that it adapts seamlessly to various devices and screen sizes. Whether users access the platform on a desktop, tablet, or mobile phone, they can enjoy a consistent and visually pleasing experience.",
+        "Responsive Design: Enjoy a consistent and optimal cooking experience across various devices, including desktops, tablets, and smartphones.",
     },
-
     {
       id: 1,
       image: sparrow_Screenshot,
@@ -100,22 +100,21 @@ const Projects = () => {
     },
     {
       id: 4,
-      image: coctail,
-      title: "Cocktail db",
+      image: big_ben,
+      title: "Big Ben's Blog",
       subtitle:
-        "The Cocktail DB is a web application that provides comprehensive information about various cocktails using the Cocktail API. It offers details on how to make any cocktail that is available and being searched for, ensuring users have access to valuable recipes and instructions.",
-      point1:
-        "Comprehensive Cocktail Database: Access an extensive collection of cocktails with detailed information.",
+        " Big Ben's Blog is a dynamic and user-friendly web application designed to provide a platform for multiple bloggers to share their thoughts, insights, and expertise with a global audience. This innovative blogging platform is meticulously crafted to cater to the diverse needs of bloggers, ensuring a seamless and engaging experience for both writers and readers alike.",
+      link: "https://big-bens-blog.netlify.app",
+      points1:
+        "Multi-Author Support: One of the standout features of Big Ben's Blog is its robust multi-author support. It allows a community of bloggers, ranging from professionals to hobbyists, to contribute their unique perspectives and content to a shared platform. Each author has their own profile, where they can showcase their expertise and build their personal brand.",
       point2:
-        "Ingredient Lists: View complete ingredient lists for each drink, making it simple to gather all necessary items before starting your cocktail-making adventure.",
+        "User-Friendly Interface: The user interface of the platform is designed with both bloggers and readers in mind. It offers an intuitive, visually appealing, and easy-to-navigate layout, making it accessible to users of all technological backgrounds. Bloggers can effortlessly create and manage their posts, while readers can explore a wealth of content without any technical barriers.",
       point3:
-        "Categorization: Easily browse and find cocktails based on categories such as type, flavor profile, spirit base, or popularity.",
+        "Customizable Blog Posts: Big Ben's Blog empowers bloggers with a wide range of formatting options. Authors can format their posts using rich text editing tools, upload images, embed links, and even add code snippets for technical articles. This ensures that bloggers have full creative control over their content.",
       point4:
-        "Mobile-Friendly: Enjoy a seamless experience on both desktop and mobile devices, ensuring you can access Cocktail db wherever you go.",
+        "Comment and Interaction Features: Interactivity is a crucial aspect of blogging, and Big Ben's Blog embraces it wholeheartedly. Readers can leave comments on blog posts, facilitating discussions and engagement between authors and their audience. ",
       point5:
-        "Search Functionality: Quickly find specific cocktails by searching for their names or ingredients.",
-
-      link: "https://cocktail-db-info.netlify.app",
+        "Responsive Design: Big Ben's Blog boasts a responsive design, ensuring that it adapts seamlessly to various devices and screen sizes. Whether users access the platform on a desktop, tablet, or mobile phone, they can enjoy a consistent and visually pleasing experience.",
     },
     {
       id: 5,
@@ -140,7 +139,7 @@ const Projects = () => {
         <article className="project_container">
           {Project.map(({ image, title, id }) => {
             return (
-              <div className="mainp_container " key={id} data-aos="fade-up" key={id}>
+              <div className="mainp_container " key={id} data-aos="fade-up">
                 <img src={image} alt={title} data-aos="zoom-in" />
                 <div className="btn_container">
                   <h3>{title}</h3>
@@ -182,7 +181,7 @@ const Projects = () => {
                         onClick={closeModal}
                         className="contact p_btn_red"
                       >
-                        <AiOutlineClose/>
+                        <AiOutlineClose />
                       </button>
                     </div>
 
