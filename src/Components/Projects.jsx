@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import gitHub from "../images/gitHub.png";
-import coctail from "../images/coctail.png";
+import cloud from "../images/cloud_ready.png";
 import sparrow_Screenshot from "../images/sparrow_Screenshot.png";
 import big_ben from "../images/big_ben.png";
 import hydrapage_Screenshot from "../images/hydrapage_Screenshot .png";
@@ -44,23 +44,37 @@ const Projects = () => {
         "Global Culinary Connection: Immerse yourself in the rich tapestry of global cuisine. Discover not just recipes but the stories behind them, as we take you on a virtual journey around the world through the lens of gastronomy.",
       point5:
         "Responsive Design: Enjoy a consistent and optimal cooking experience across various devices, including desktops, tablets, and smartphones.",
+    }, {
+      id: 3,
+      image: jobStore,
+      title: "JobSter",
+      subtitle: `JobTracker is a revolutionary web application designed to streamline and organize your job search process. Finding your dream job has never been easier, thanks to our feature-rich platform that allows you to effortlessly store and track all your job applications, interviews, offers, and rejections in one convenient place.`,
+      point1:
+        "Effortless Application Tracking: Say goodbye to scattered spreadsheets and notes. JobTracker lets you log all your job applications with essential details like company name, job title, application date, and more. With just a few clicks, you can add new applications or update existing ones.",
+      point2:
+        "Centralized Offer and Rejection Management: Receive an offer? Update your JobTracker profile and keep a record of all the exciting opportunities that come your way.",
+      point3:
+        "Visual Insights with Bar and Area Charts: JobTracker goes beyond mere data storage. Our interactive charts provide you with insightful visualizations of your job search progress. The bar chart displays the number of job applications made each month, giving you a clear overview of your activity levels over time. The area chart reveals trends and patterns in your job application history, helping you refine your strategy for success.",
+      point4:
+        "Smart Filters and Search: With an ever-increasing number of job applications, finding specific details can become overwhelming. Fear not! JobTrackr comes with smart filtering and search options that allow you to quickly locate any job application, interview, or other vital information.",
+
+      link: "https://job-ster-app.netlify.app/",
     },
     {
       id: 1,
-      image: sparrow_Screenshot,
-      title: "Sparrow Networkx",
+      image: cloud,
+      title: "Cloud Ready",
       subtitle:
-        " Welcome to our Sparrow Networkx e-commerce web app, where style and convenience meet to transform your living spaces! Discover an extensive collection of meticulously curated furniture pieces that cater to your unique tastes and needs. With our user-friendly interface and seamless browsing experience, furnishing your dream home has never been easier.",
-      link: "https://sparrow-networkx.netlify.app",
+        " Welcome to our Sparrow Networkx Get the best software development guidance from technical experts - for one fixed monthly fee.",
+      link: "https://cloud-ready2.vercel.app/",
       points1:
-        "Extensive Product Catalog: Our app boasts an extensive product catalog, featuring a diverse range of furniture's to cater to every lifestyle and interest.",
+        "Clear and concise technical guidance that helps you make informed decisions throughout the development process.",
       point2:
-        "User-Friendly Interface: Enjoy a seamless and intuitive browsing experience, with a clean and user-friendly interface that makes navigation effortless.",
+        "Expert oversight and guidance to reduce the risk of costly mistakes and errors that set back your development timeline.",
       point3:
-        "Advanced Search and Filtering: Utilize powerful search and filtering options to quickly find the perfect furniture item based on your specific criteria, such as size, color, material, and price range.",
+        "Identify bottlenecks and inefficiencies in your development process, optimise your workflows and accelerate your time to market.",
       point4:
         "Responsive Design: Enjoy a consistent and optimal shopping experience across various devices, including desktops, tablets, and smartphones.",
-      point5: "most forked repos",
     },
     {
       id: 2,
@@ -82,22 +96,7 @@ const Projects = () => {
       link: "https://github-search-info.netlify.app",
     },
 
-    {
-      id: 3,
-      image: jobStore,
-      title: "JobSter",
-      subtitle: `JobTracker is a revolutionary web application designed to streamline and organize your job search process. Finding your dream job has never been easier, thanks to our feature-rich platform that allows you to effortlessly store and track all your job applications, interviews, offers, and rejections in one convenient place.`,
-      point1:
-        "Effortless Application Tracking: Say goodbye to scattered spreadsheets and notes. JobTracker lets you log all your job applications with essential details like company name, job title, application date, and more. With just a few clicks, you can add new applications or update existing ones.",
-      point2:
-        "Centralized Offer and Rejection Management: Receive an offer? Update your JobTracker profile and keep a record of all the exciting opportunities that come your way.",
-      point3:
-        "Visual Insights with Bar and Area Charts: JobTracker goes beyond mere data storage. Our interactive charts provide you with insightful visualizations of your job search progress. The bar chart displays the number of job applications made each month, giving you a clear overview of your activity levels over time. The area chart reveals trends and patterns in your job application history, helping you refine your strategy for success.",
-      point4:
-        "Smart Filters and Search: With an ever-increasing number of job applications, finding specific details can become overwhelming. Fear not! JobTrackr comes with smart filtering and search options that allow you to quickly locate any job application, interview, or other vital information.",
-
-      link: "https://job-ster-app.netlify.app/",
-    },
+   
     {
       id: 4,
       image: big_ben,
