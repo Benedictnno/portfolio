@@ -65,7 +65,7 @@ const Projects = () => {
       image: cloud,
       title: "Cloud Ready",
       subtitle:
-        " Welcome to our Sparrow Networkx Get the best software development guidance from technical experts - for one fixed monthly fee.",
+        " Welcome to Cloud Ready Get the best software development guidance from technical experts - for one fixed monthly fee.",
       link: "https://cloud-ready2.vercel.app/",
       points1:
         "Clear and concise technical guidance that helps you make informed decisions throughout the development process.",
