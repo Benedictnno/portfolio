@@ -6,7 +6,9 @@ import "aos/dist/aos.css";
 import Nav from "./Nav";
 import { aniQuotes } from "./Quotes";
 import Resume from "../../images/Resume.pdf";
-
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io";
 const Top = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -25,7 +27,7 @@ const Top = () => {
             </span>
           </h1>
           <br />
-          <h1 className="frontend ">Frontend web developer </h1>
+          <h1 className="frontend ">A Full Stackweb developer </h1>
           <blockquote>{aniQuotes()}</blockquote>
 
           <div className="top_btn_container b-container">
@@ -35,7 +37,10 @@ const Top = () => {
               </a>
             </button>
             <button type="button " className="contact   ">
-              <a href="#contact">Contact developer</a>
+              <RiTwitterXFill />
+              <FaGithub />
+              <IoLogoLinkedin />
+
             </button>
           </div>
         </section>
